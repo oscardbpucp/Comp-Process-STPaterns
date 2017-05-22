@@ -227,7 +227,7 @@ function convert_5(cad) {
             }
 
             if (item.indexOf("estac-pto-rocio") > -1) {
-                L = 4;
+                L = 5;
                 if (item.indexOf("<") > -1) {
                     color = "#E2EFDA";
                 } else if (item.indexOf(":") > -1) {
@@ -313,7 +313,7 @@ function draw(data, step_sp) {
     var chart = d3.select("#graphic-pattern").append("svg:svg")
             .attr("class", "chart")
             .attr("width", 450)
-            .attr("height", 180).append("svg:g")
+            .attr("height", 190).append("svg:g")
             .attr("transform", "translate(50,10)");
 
     var text = chart.append('text').text(step_sp+1)

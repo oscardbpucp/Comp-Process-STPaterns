@@ -1,0 +1,5 @@
+"boya-salinidad_34.928:35.05, boya-temp_24.089:25.121, caudal_<28.612, boya-salinidad_35.05:35.142, caudal_68.884:161.761 estac-pto-rocio_69.809:74.111, boya-temp_<24.089",
+"caudal_161.761:500346.845, boya-temp 26.105:26.769, boya-salinidad_34.928:35.05, boya-salinidad_34.928:35.05, boya-temp_24.089:25.121, caudal_28.612:68.884",
+"boya-temp_26.105:26.769, caudal_<28.612, caudal_<28.612, caudal_68.884:161.761 estac-pto-rocio_69.809:74.111, boya-temp_<24.089",
+"boya-temp_26.105:26.769, boya-salinidad_34.928:35.05, caudal_<28.612, caudal_<28.612, caudal_68.884:161.761 estac-pto-rocio_69.809:74.111, boya-temp_<24.089",
+"caudal_161.761:500346.845, boya-temp_24.089:25.121, boya-temp_24.089:25.121, caudal_68.884:161.761 estac-pto-rocio_69.809:74.111, boya-temp_<24.089"

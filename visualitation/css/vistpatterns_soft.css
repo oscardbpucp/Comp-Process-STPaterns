@@ -1,0 +1,97 @@
+/*!
+ Copyright (C) 2017  Oscar Diaz Barriga
+
+ This file is part of Comp-Process-STPatterns.
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+body {
+    background-color: #fafafa;
+}
+
+a.navbar-brand {
+    font-size: xx-large;
+}
+
+nav.navbar.navbar-default.navbar-static-top {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+button#btn-pattern {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+textarea#message-text {
+    font-size: 12px;
+    margin: 0px -1px 0px 0px;
+    height: 123px;
+}
+
+.copyright {
+    float: left;
+    background-color: rgb(253, 253, 253);
+    padding: 12px 0px 12px 28px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.navbar-default .navbar-brand {
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer hr {
+    margin-top: auto;
+}
+
+div#graphic-pattern {
+    text-align: center;
+    background-color: rgba(115,110,110,0.9);
+}
+
+svg {
+    background-color: rgb(129, 124, 124);
+}
+
+image {
+    width: 80%;
+}
+
+.line {
+    fill: none;
+    /*stroke-width: 20px;*/
+    stroke-linecap: round;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    vertical-align: central;
+    width: 145px;
+    height: 20px;
+    padding: 1px;
+    font: 11px sans-serif;
+    background: khaki;
+    border: 0px;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+.d3-tip.n {
+    font: 14px sans-serif;
+    border-radius: 3px;
+}

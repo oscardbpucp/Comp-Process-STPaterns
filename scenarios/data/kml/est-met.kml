@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="est_met" id="est_met">
+	<SimpleField name="id_estacion" type="int"></SimpleField>
+	<SimpleField name="nombre" type="string"></SimpleField>
+	<SimpleField name="latitud" type="float"></SimpleField>
+	<SimpleField name="longitud" type="float"></SimpleField>
+	<SimpleField name="elevacion" type="float"></SimpleField>
+	<SimpleField name="fecha_inicio" type="int"></SimpleField>
+	<SimpleField name="fecha_fin" type="int"></SimpleField>
+	<SimpleField name="id_region" type="int"></SimpleField>
+</Schema>
+<Folder><name>est_met</name>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">843700</SimpleData>
+		<SimpleData name="nombre">PEDRO CANGA</SimpleData>
+		<SimpleData name="latitud">-3.553</SimpleData>
+		<SimpleData name="longitud">-80.381</SimpleData>
+		<SimpleData name="elevacion">35.1</SimpleData>
+		<SimpleData name="fecha_inicio">19740315</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">24</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-80.381,-3.553</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">843770</SimpleData>
+		<SimpleData name="nombre">CORONEL FRANCISCO SECADA VIGN</SimpleData>
+		<SimpleData name="latitud">-3.785</SimpleData>
+		<SimpleData name="longitud">-73.309</SimpleData>
+		<SimpleData name="elevacion">93.3</SimpleData>
+		<SimpleData name="fecha_inicio">19730101</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">16</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.309,-3.785</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">843900</SimpleData>
+		<SimpleData name="nombre">CAPITAN MONTES</SimpleData>
+		<SimpleData name="latitud">-4.577</SimpleData>
+		<SimpleData name="longitud">-81.254</SimpleData>
+		<SimpleData name="elevacion">86</SimpleData>
+		<SimpleData name="fecha_inicio">19330209</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">20</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-81.254,-4.577</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">844010</SimpleData>
+		<SimpleData name="nombre">CAPITAN FAP GUILLERMO CONCHA</SimpleData>
+		<SimpleData name="latitud">-5.206</SimpleData>
+		<SimpleData name="longitud">-80.616</SimpleData>
+		<SimpleData name="elevacion">35.4</SimpleData>
+		<SimpleData name="fecha_inicio">19570701</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">20</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-80.616,-5.206</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">844250</SimpleData>
+		<SimpleData name="nombre">MOISES BENZAQUEN RENGIFO</SimpleData>
+		<SimpleData name="latitud">-5.894</SimpleData>
+		<SimpleData name="longitud">-76.118</SimpleData>
+		<SimpleData name="elevacion">178.9</SimpleData>
+		<SimpleData name="fecha_inicio">19490114</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">16</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.118,-5.894</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">844440</SimpleData>
+		<SimpleData name="nombre">CHACHAPOYAS</SimpleData>
+		<SimpleData name="latitud">-6.202</SimpleData>
+		<SimpleData name="longitud">-77.856</SimpleData>
+		<SimpleData name="elevacion">2539.9</SimpleData>
+		<SimpleData name="fecha_inicio">19600101</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.856,-6.202</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">844520</SimpleData>
+		<SimpleData name="nombre">CAPT JOSE A  QUINONES GONZALE</SimpleData>
+		<SimpleData name="latitud">-6.787</SimpleData>
+		<SimpleData name="longitud">-79.828</SimpleData>
+		<SimpleData name="elevacion">29.6</SimpleData>
+		<SimpleData name="fecha_inicio">19330102</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">14</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.828,-6.787</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">844550</SimpleData>
+		<SimpleData name="nombre">CADETE GUILLERMO DEL CASTILLO</SimpleData>
+		<SimpleData name="latitud">-6.509</SimpleData>
+		<SimpleData name="longitud">-76.373</SimpleData>
+		<SimpleData name="elevacion">274.3</SimpleData>
+		<SimpleData name="fecha_inicio">19500104</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">22</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.373,-6.509</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">844720</SimpleData>
+		<SimpleData name="nombre">GEN FAP ARMANDO REVOREDO IGLE</SimpleData>
+		<SimpleData name="latitud">-7.139</SimpleData>
+		<SimpleData name="longitud">-78.489</SimpleData>
+		<SimpleData name="elevacion">2676.4</SimpleData>
+		<SimpleData name="fecha_inicio">19570701</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">6</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-78.489,-7.139</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">844740</SimpleData>
+		<SimpleData name="nombre">JUANJUI</SimpleData>
+		<SimpleData name="latitud">-7.169</SimpleData>
+		<SimpleData name="longitud">-76.729</SimpleData>
+		<SimpleData name="elevacion">349.9</SimpleData>
+		<SimpleData name="fecha_inicio">19501028</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">22</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.729,-7.169</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">845010</SimpleData>
+		<SimpleData name="nombre">CAPITAN CARLOS MARTINEZ DE PI</SimpleData>
+		<SimpleData name="latitud">-8.081</SimpleData>
+		<SimpleData name="longitud">-79.109</SimpleData>
+		<SimpleData name="elevacion">32.3</SimpleData>
+		<SimpleData name="fecha_inicio">19490102</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">13</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.109,-8.081</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">845150</SimpleData>
+		<SimpleData name="nombre">CAP FAP DAVID ABENZUR RENGIFO</SimpleData>
+		<SimpleData name="latitud">-8.378</SimpleData>
+		<SimpleData name="longitud">-74.574</SimpleData>
+		<SimpleData name="elevacion">156.4</SimpleData>
+		<SimpleData name="fecha_inicio">19490102</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.574,-8.378</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">845310</SimpleData>
+		<SimpleData name="nombre">TENIENTE JAIME A DE MONTREUIL</SimpleData>
+		<SimpleData name="latitud">-9.15</SimpleData>
+		<SimpleData name="longitud">-78.524</SimpleData>
+		<SimpleData name="elevacion">21</SimpleData>
+		<SimpleData name="fecha_inicio">19600702</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-78.524,-9.15</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">845340</SimpleData>
+		<SimpleData name="nombre">TINGO MARIA</SimpleData>
+		<SimpleData name="latitud">-9.133</SimpleData>
+		<SimpleData name="longitud">-75.95</SimpleData>
+		<SimpleData name="elevacion">665</SimpleData>
+		<SimpleData name="fecha_inicio">19490222</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">10</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-75.95,-9.133</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">845420</SimpleData>
+		<SimpleData name="nombre">COMANDANTE FAP GERMAN ARIAS G</SimpleData>
+		<SimpleData name="latitud">-9.347</SimpleData>
+		<SimpleData name="longitud">-77.598</SimpleData>
+		<SimpleData name="elevacion">2749.9</SimpleData>
+		<SimpleData name="fecha_inicio">19730101</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.598,-9.347</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">845640</SimpleData>
+		<SimpleData name="nombre">ALFEREZ FAP D F FERNANDINI</SimpleData>
+		<SimpleData name="latitud">-9.879</SimpleData>
+		<SimpleData name="longitud">-76.205</SimpleData>
+		<SimpleData name="elevacion">1850.1</SimpleData>
+		<SimpleData name="fecha_inicio">19600307</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">10</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.205,-9.879</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">845800</SimpleData>
+		<SimpleData name="nombre">MAZAMARI</SimpleData>
+		<SimpleData name="latitud">-11.333</SimpleData>
+		<SimpleData name="longitud">-74.55</SimpleData>
+		<SimpleData name="elevacion">685</SimpleData>
+		<SimpleData name="fecha_inicio">20090922</SimpleData>
+		<SimpleData name="fecha_fin">20160722</SimpleData>
+		<SimpleData name="id_region">12</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.55,-11.333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">845930</SimpleData>
+		<SimpleData name="nombre">ATALAYA</SimpleData>
+		<SimpleData name="latitud">-10.729</SimpleData>
+		<SimpleData name="longitud">-73.767</SimpleData>
+		<SimpleData name="elevacion">228.9</SimpleData>
+		<SimpleData name="fecha_inicio">19570701</SimpleData>
+		<SimpleData name="fecha_fin">20160812</SimpleData>
+		<SimpleData name="id_region">25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.767,-10.729</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">846231</SimpleData>
+		<SimpleData name="nombre">FRANCISCO CARLE</SimpleData>
+		<SimpleData name="latitud">-11.783</SimpleData>
+		<SimpleData name="longitud">-75.473</SimpleData>
+		<SimpleData name="elevacion">3363.2</SimpleData>
+		<SimpleData name="fecha_inicio">20010925</SimpleData>
+		<SimpleData name="fecha_fin">20160812</SimpleData>
+		<SimpleData name="id_region">12</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-75.473,-11.783</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">846280</SimpleData>
+		<SimpleData name="nombre">JORGE CHAVEZ INTL</SimpleData>
+		<SimpleData name="latitud">-12.022</SimpleData>
+		<SimpleData name="longitud">-77.114</SimpleData>
+		<SimpleData name="elevacion">34.4</SimpleData>
+		<SimpleData name="fecha_inicio">19601106</SimpleData>
+		<SimpleData name="fecha_fin">20160719</SimpleData>
+		<SimpleData name="id_region">15</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-77.114,-12.022</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">846580</SimpleData>
+		<SimpleData name="nombre">PADRE ALDAMIZ</SimpleData>
+		<SimpleData name="latitud">-12.614</SimpleData>
+		<SimpleData name="longitud">-69.229</SimpleData>
+		<SimpleData name="elevacion">200.9</SimpleData>
+		<SimpleData name="fecha_inicio">19471108</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">17</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-69.229,-12.614</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">846730</SimpleData>
+		<SimpleData name="nombre">CORONEL FAP ALFREDO MENDIVIL</SimpleData>
+		<SimpleData name="latitud">-13.155</SimpleData>
+		<SimpleData name="longitud">-74.204</SimpleData>
+		<SimpleData name="elevacion">2717.9</SimpleData>
+		<SimpleData name="fecha_inicio">19660104</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.204,-13.155</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">846860</SimpleData>
+		<SimpleData name="nombre">TENIENTE ALEJANDRO VELASCO AS</SimpleData>
+		<SimpleData name="latitud">-13.536</SimpleData>
+		<SimpleData name="longitud">-71.939</SimpleData>
+		<SimpleData name="elevacion">3310.1</SimpleData>
+		<SimpleData name="fecha_inicio">19490303</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">8</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.939,-13.536</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">846880</SimpleData>
+		<SimpleData name="nombre">ANDAHUAYLAS</SimpleData>
+		<SimpleData name="latitud">-13.706</SimpleData>
+		<SimpleData name="longitud">-73.35</SimpleData>
+		<SimpleData name="elevacion">3444.2</SimpleData>
+		<SimpleData name="fecha_inicio">19940401</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.35,-13.706</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">846910</SimpleData>
+		<SimpleData name="nombre">PISCO INTL</SimpleData>
+		<SimpleData name="latitud">-13.745</SimpleData>
+		<SimpleData name="longitud">-76.22</SimpleData>
+		<SimpleData name="elevacion">11.9</SimpleData>
+		<SimpleData name="fecha_inicio">19350415</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">11</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-76.22,-13.745</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">847200</SimpleData>
+		<SimpleData name="nombre">MARIA REICHE NEUMAN</SimpleData>
+		<SimpleData name="latitud">-14.854</SimpleData>
+		<SimpleData name="longitud">-74.962</SimpleData>
+		<SimpleData name="elevacion">566.9</SimpleData>
+		<SimpleData name="fecha_inicio">20010915</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">11</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.962,-14.854</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">847350</SimpleData>
+		<SimpleData name="nombre">JULIACA</SimpleData>
+		<SimpleData name="latitud">-15.467</SimpleData>
+		<SimpleData name="longitud">-70.158</SimpleData>
+		<SimpleData name="elevacion">3825.8</SimpleData>
+		<SimpleData name="fecha_inicio">19610308</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">21</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.158,-15.467</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">847520</SimpleData>
+		<SimpleData name="nombre">RODRIGUEZ BALLON</SimpleData>
+		<SimpleData name="latitud">-16.341</SimpleData>
+		<SimpleData name="longitud">-71.583</SimpleData>
+		<SimpleData name="elevacion">2561.8</SimpleData>
+		<SimpleData name="fecha_inicio">19420101</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">4</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.583,-16.341</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">847730</SimpleData>
+		<SimpleData name="nombre">ILO</SimpleData>
+		<SimpleData name="latitud">-17.695</SimpleData>
+		<SimpleData name="longitud">-71.344</SimpleData>
+		<SimpleData name="elevacion">21.9</SimpleData>
+		<SimpleData name="fecha_inicio">20010915</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">18</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.344,-17.695</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#est_met">
+		<SimpleData name="id_estacion">847820</SimpleData>
+		<SimpleData name="nombre">CORONEL CARLOS CIRIANI SANTA</SimpleData>
+		<SimpleData name="latitud">-18.053</SimpleData>
+		<SimpleData name="longitud">-70.276</SimpleData>
+		<SimpleData name="elevacion">468.8</SimpleData>
+		<SimpleData name="fecha_inicio">19570701</SimpleData>
+		<SimpleData name="fecha_fin">20160827</SimpleData>
+		<SimpleData name="id_region">23</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.276,-18.053</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

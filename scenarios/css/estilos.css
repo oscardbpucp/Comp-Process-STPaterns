@@ -1,0 +1,298 @@
+/*!
+ Copyright (C) 2017  Oscar Diaz Barriga
+
+ This file is part of Comp-Process-STPatterns.
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#map {
+    position: relative;
+}
+#info {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    z-index: 100;
+}
+.tooltip.in {
+    opacity: 1;
+}
+.tooltip.top .tooltip-arrow {
+    border-top-color: white;
+}
+.tooltip-inner {
+    border: 2px solid white;
+}
+
+/******************************************************************************/
+
+a.skiplink {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+a.skiplink:focus {
+    clip: auto;
+    height: auto;
+    width: auto;
+    background-color: #fff;
+    padding: 0.3em;
+}
+#map:focus {
+    outline: #4A74A8 solid 0.15em;
+}
+
+/******************************************************************************/
+
+.rotate-north {
+    position: absolute;
+    top: 6px;
+    left: 40px;
+    background: rgba(255,255,255,0.4);
+    border-radius: 4px;
+    padding: 2px;
+}
+.ol-touch .rotate-north {
+    top: 80px;
+}
+.rotate-north a {
+    display: block;
+    color: white;
+    font-size: 16px;
+    /*font-family: 'Lucida Grande',Verdana,Geneva,Lucida,Arial,Helvetica,sans-serif;*/
+    font-family: 'Glyphicons Halflings';
+    font-weight: bold;
+    margin: 1px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 2px;
+    height: 22px;
+    width: 28px;
+    background: rgba(0,60,136,0.5);
+    padding-top: 4px;
+}
+.ol-touch .rotate-north a {
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    line-height: 26px;
+}
+.rotate-north a:hover {
+    background: rgba(0,60,136,0.7);
+}
+
+/********************************************/
+.sidebarv.vei div.slider-selection {
+    background: rgba(255, 153, 0, 0.8);
+}
+
+.sidebarv.itsunami div.slider-selection {
+    background: rgba(27, 171, 160, 0.7);
+}
+
+.sidebarv.vei .slider-handle {
+    background: darkorange;
+}
+
+.sidebarv.itsunami .slider-handle {
+    background: rgba(3, 169, 158, 1);
+}
+
+.sidebarv.vei {
+    /*padding-top: 6px;*/
+    color: darkorange;
+}
+
+.sidebarv .slider-disabled .slider-handle, 
+.sidebarv .slider-disabled div.slider-selection  {
+    background: #bebebe;
+}
+
+.sidebarv.fecha {
+    padding-top: 6px;
+}
+
+/*.sidebarv {
+    padding-left: 18px;
+
+}*/
+
+.sidebarv.fecha .slider-selection {
+    background: #5b9ad2;
+}
+
+.sidebarv span#sliderVEI {
+    color: rgba(255, 153, 0, 0.8);
+}
+
+.label-menu, .ex3SliderVal {
+    color: #CCC ;
+    font-size: smaller;
+}
+
+label, span#sliderVEI {
+    color: #CCC;
+}
+
+label, span#sliderITsunami {
+    color: #CCC;
+}
+
+/********************************************/
+.label-menu-title {
+    text-align: center;
+    line-height: 26px;
+    color: white!important;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-bottom: 14px;
+    padding-top: 24px;
+    
+}
+
+/********************************************/
+.simple-panel {
+    position:relative;
+    background-color: #DDD;
+    height:85%;
+    width:inherit;
+} 
+
+.full-panel {
+    position:relative;
+    background-color: #DDD;
+    height:inherit;
+    width:inherit;
+}
+
+.simple-map {
+    border-style: solid;
+    border-width: 0px;
+    position: relative;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: #DDD;
+}               
+
+.full-map {
+    height: 100%;
+    width: 100%;
+    background-color: #DDD;
+}    
+/***********************************************/
+.infoVolcanTsunami {
+    padding-top: 20px;
+    color: #CCC;
+    /*padding-left: 0px;*/
+}
+
+/***********************************************/
+#myMenu {
+    padding-top: 28px;
+    color: #74bbff;
+}
+
+#myMenu:hover {
+    color: #337ab7;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/***********************************************/
+
+.toggle-erupcionesvolcanicas .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary {
+    background: #ff8c00;
+}
+
+/***********************************************/
+
+.toggle-tsunamis .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary {
+    background: #03a99e;
+}
+
+/***********************************************/
+
+.legend-map {
+    position: fixed;
+    bottom: 10px;
+    right: 68px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    border-left-color:#999999;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-bottom-color: #999999;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-top-color: #fbfbfb;
+    border-top-style: solid;
+    border-top-width: 2px;
+}
+
+.legend-map img {
+    width: 220px;
+}
+
+
+.legend-altaguamax {
+    position: fixed;
+    bottom: 10px;
+    left: 380px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    border-left-color:#999999;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-bottom-color: #999999;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-top-color: #fbfbfb;
+    border-top-style: solid;
+    border-top-width: 2px;
+}
+
+.legend-altaguamax  img{
+    width: 140px;
+}
+
+.bootstrap-switch {
+    border: 0px solid;
+}
+
+#elnino span.bootstrap-switch-handle-on.bootstrap-switch-primary {
+    background: #c1110e;
+}
+
+#escenario1 span.bootstrap-switch-handle-on.bootstrap-switch-primary {
+    background: #f6a545;
+}
+
+#escenario2 span.bootstrap-switch-handle-on.bootstrap-switch-primary {
+    background: #c28cf4;
+}
+
+

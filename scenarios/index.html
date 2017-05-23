@@ -1,0 +1,498 @@
+<!--
+ Copyright (C) 2017  Oscar Diaz Barriga
+
+ This file is part of Comp-Process-STPatterns.
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="robots" content="index, all"/>
+    <title>El Nino 1+2</title>
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <link rel="stylesheet" href="http://openlayers.org/en/v3.16.0/css/ol.css" type="text/css">
+    <script src="http://openlayers.org/en/v3.16.0/build/ol.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <link href="css/bootstrap-switch.css" rel="stylesheet">
+    <script src="js/bootstrap-switch.js"></script>
+    <link href="css/bootstrap-slider.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css" type="text/css"/>
+    <script type="text/javascript" src="js/bootstrap-slider.js"></script>
+
+</head>
+<body>
+<div id="wrapper" class="contai">
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <div class="col-sm-8">
+                    <div class="label-menu-title">El Niño 1+2</div>
+                </div>
+                <div class="col-sm-4"><a href="#" id="myMenu" class="glyphicon glyphicon-menu-hamburger" title="Ocultar Menú"></a></div>
+            </li>
+            <li>
+                <div class="col-sm-12" style="padding-top: 10px; font-weight: 100;">
+                    <div class="col-md-5"><span class="label-menu">Satélite</span></div>
+
+                    <div class="col-md-7">
+                        <input class="pull-right" id="layer-city" type="checkbox" data-size="small" name="layer-city">
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <div class="col-sm-12" style="padding-top: 10px; font-weight: 100;">
+                    <div class="col-md-5"><span class="label-menu">Placas Tectónicas</span></div>
+                    <div class="col-md-7">
+                        <input id="layer-placastectonicas" type="checkbox" data-size="small" name="layer-placastectonicas">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-sm-12" style="padding-top: 10px; font-weight: 100;">
+                    <div class="col-md-5"><span class="label-menu">Niño 1+2</span></div>
+                    <div id="elnino" class="col-md-7">
+                        <input id="layer-nino" type="checkbox" data-size="small" name="layer-nino">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-sm-12" style="padding-top: 10px; font-weight: 100;">
+                    <div class="col-md-5"><span class="label-menu">Escenario 1</span></div>
+                    <div id="escenario1" class="col-md-7">
+                        <input id="layer-escenario1" type="checkbox" data-size="small" name="layer-escenario1">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-sm-12" style="padding-top: 10px; font-weight: 100;">
+                    <div class="col-md-5"><span class="label-menu">Escenario 2</span></div>
+                    <div id="escenario2" class="col-md-7">
+                        <input id="layer-escenario2" type="checkbox" data-size="small" name="layer-escenario2">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-sm-12" style="padding-top: 10px; font-weight: 100;">
+                    <span id="sliderDate" class="label-menu">Rango de dias <span
+                            id="ex3SliderVal">2015/02/01:2016/05/30</span></span>
+                    <div class="sidebarv fecha">
+                        <input id="ex3" type="text" class="span2" data-slider-min="1" data-slider-max="486"
+                               data-slider-tooltip="hide" data-slider-step="14" data-slider-value="[100,106]"/>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-sm-12" style="padding-top: 15px;">
+                    <div class="infoVolcanTsunami">
+                        <div>
+                            <span style="font-size: 20px;padding-left: 44px;">Información</span>
+                        </div>
+                        <div>
+                            <span><span id="infoTipo">Tipo</span><span id="infoNombre">-</span></span>
+                        </div>
+                        <div>
+                            <span>Fecha<span id="infoFecha">-</span></span>
+                        </div>
+                        <!-- <div>
+                            <span>Intensidad<span id="infoVIntensidad">-</span></span>
+                        </div> -->
+                        <div class="infoExtras">
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="panel" class="simple-panel">
+                        <div id="map" class="simple-map">
+                            <div id="info"></div>
+                        </div>
+                        <div id="popup"></div>
+                        <div class="legend-map">
+                            <!--<img alt="Leyenda" src="image/leyenda.png"> -->
+                        </div>
+                        <div class="legend-altaguamax">
+                        </div>
+                    </div>
+                    <script>
+                                var url = 'http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/' +
+                                        'Specialty/ESRI_StateCityHighway_USA/MapServer';
+
+                                $("[name='layer-city']").bootstrapSwitch('state', false);
+                                //$('#layer-erupcionesvolcanicas').bootstrapSwitch('state', false);
+                                //$('#layer-tsunamis').bootstrapSwitch('state', false);
+                                $('#layer-placastectonicas').bootstrapSwitch('state', false);
+                                $('#layer-nino').bootstrapSwitch('state', true);
+                                $('#layer-escenario1').bootstrapSwitch('state', false);
+                                $('#layer-escenario2').bootstrapSwitch('state', false);
+
+                                /**
+                                 * Define a namespace for the application.
+                                 */
+
+
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/capas.js"></script>
+<script src="js/mapa.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+                                $("#menu-toggle").click(function (e) {
+                                    e.preventDefault();
+                                    $("#wrapper").toggleClass("toggled");
+                                });
+
+                                $("#myMenu").click(function (e) {
+                                    e.preventDefault();
+                                    $("#wrapper").toggleClass("toggled");
+                                });
+
+                                $("#layer-satellite").click(function (e) {
+                                    e.preventDefault();
+                                    limit = 2;
+                                    //map.updateSize();
+                                    vvolcanes.getSource().changed();
+                                    vptsunamis.getSource().changed();
+                                });
+
+</script>
+
+<script>
+            var $div = $("#wrapper");
+            var observer = new MutationObserver(function (mutations) {
+                mutations.forEach(function (mutation) {
+                    if (mutation.attributeName === "class") {
+
+                        if ($("#map").attr('class') === "simple-ma1p") {
+                            mapwidth = $("#map").width();
+                            mapheight = $("#map").height();
+                            $("#panel").removeClass("simple-panel");
+                            $("#panel").addClass("full-panel");
+                            $("#map").removeClass("simple-map");
+                            $("#map").addClass("full-map");
+
+                        }
+
+                        if ($("#map").attr('class') === "full-m1ap") {
+                            $("#panel").removeClass("full-panel");
+                            $("#panel").addClass("simple-panel");
+                            $("#map").removeClass("full-map");
+                            $("#map").addClass("simple-map");
+
+                        }
+
+                        vvolcanes.getSource().changed();
+                        vptsunamis.getSource().changed();
+                        $("#panel").removeClass("simple-panel");
+                        $("#panel").addClass("full-panel");
+                        $("#map").removeClass("simple-map");
+                        $("#map").addClass("full-map");
+                    }
+                });
+            });
+            observer.observe($div[0], {
+                attributes: true
+            });
+            
+            var info = $('#info');
+            info.tooltip({
+                animation: false,
+                trigger: 'manual'
+            });
+
+            var displayFeatureInfo = function (pixel) {
+
+                info.css({
+                    left: pixel[0] + 'px',
+                    top: (pixel[1] - 10) + 'px'
+                });
+                var feature = map.forEachFeatureAtPixel(pixel, function (feature) {
+                    return feature;
+                });
+                   // console.log(feature.get("id_estacion"));
+                if (feature) {
+                    if (feature.get("psal")) {
+                        info.tooltip('hide')
+                                .attr('data-original-title', feature.get('name'))
+                                .tooltip('fixTitle')
+                                .tooltip('show');
+                        infoBoyaOn(feature);
+                        
+                    } else {
+                        if (feature.get("id_estacion")) {
+                        info.tooltip('hide')
+                                .attr('data-original-title', feature.get('nombre'))
+                                .tooltip('fixTitle')
+                                .tooltip('show');
+                        infoEstMeteorologicaOn(feature);
+                        }else {
+
+                        info.tooltip('hide')
+                                .attr('data-original-title', feature.get('location_name'))
+                                .tooltip('fixTitle')
+                                .tooltip('show');
+                        infoTsunamiOn(feature);
+                        }
+                    }
+
+                    info.tooltip('hide')
+                            .attr('data-original-title', feature.get('name'))
+                            .tooltip('fixTitle')
+                            .tooltip('show');
+
+                } else {
+                    info.tooltip('hide');
+                    infoVolcanOff();
+                    infoTsunamiOff();
+                }
+            };
+
+            map.on('pointermove', function (evt) {
+                if (evt.dragging) {
+                    info.tooltip('hide');
+                    return;
+                }
+                displayFeatureInfo(map.getEventPixel(evt.originalEvent));
+            });
+
+            map.on('click', function (evt) {
+                displayFeatureInfo(evt.pixel);
+            });
+
+            function infoEstMeteorologicaOn(feature) {
+                $("#infoTipo").text("Est. Met.");
+                $("#infoNombre").text(": " + feature.get('nombre').replace(";", ", "));
+                $("#infoFecha").text(": " + feature.get("fecha_inicio") + ": " + feature.get("fecha_fin"));
+                //$("#infoVIntensidad").text();
+                $(".infoExtras").empty();
+            }
+
+            function infoBoyaOn(feature) {
+                $("#infoTipo").text("Boya");
+                $("#infoNombre").text(": " + feature.get('name').replace(";", ", "));
+                //$("#infoFecha").text(": " + feature.get("ano") + ": " + feature.get("fecha_fin"));
+                //$("#infoVIntensidad").text();
+                $(".infoExtras").empty();
+            }
+
+            function infoVolcanOn(feature) {
+                var fecha = "";
+                if ((feature.get('day') !== undefined) && (feature.get('month') !== undefined)) {
+                    fecha = feature.get('day') + "-" + feature.get('month') + "-" + feature.get('year');
+                } else {
+                    fecha = feature.get('year');
+                }
+
+                $("#infoTipo").text("Volcán");
+                $("#infoNombre").text(": " + feature.get('name').replace(";", ", "));
+                $("#infoFecha").text(": " + fecha);
+                $("#infoVIntensidad").text(": " + feature.get('vei'));
+                $(".infoExtras").empty();
+            }
+
+            function infoVolcanOff() {
+                $("#infoNombre").text(": -");
+                $("#infoFecha").text(": -");
+                $("#infoVIntensidad").text(": -");
+                $(".infoExtras").empty();
+            }
+
+
+            function infoTsunamiOn(feature) {
+                var fecha = "";
+                if ((feature.get('day') !== undefined) && (feature.get('month') !== undefined)) {
+                    fecha = feature.get('day') + "-" + feature.get('month') + "-" + feature.get('year');
+                } else {
+                    fecha = feature.get('year');
+                }
+
+                //$("#infoTipo").text("Tsunami");
+                if (feature.get('location_name')) {
+                $("#infoNombre").text(": " + feature.get('location_name').replace(";", ", "));
+                }
+                $("#infoFecha").text(": " + fecha);
+                $("#infoVIntensidad").text(": " + feature.get('primary_magnitude'));
+                $(".infoExtras").empty();
+                if (feature.get('maximum_water_height')) {
+                    $(".infoExtras").append(" <span>Altura(m) : <span>" + feature.get('maximum_water_height') + "</span></span>");
+                } else {
+                    $(".infoExtras").append(" <span>Altura(m) : <span> ? </span></span>");
+                }
+                if (feature.get('cause_code')) {
+                    if(feature.get('cause_code') == 6){
+                        $(".infoExtras").append(" <br><span>Causa : <span> Volcán </span></span>");
+                    } else if (feature.get('cause_code') == 8) {
+                        $(".infoExtras").append(" <br><span>Causa : <span> Avalancha </span></span>");    
+                    } else if (feature.get('cause_code') == 7) {
+                        $(".infoExtras").append(" <br><span>Causa : <span> Volcán y Avalancha </span></span>");    
+                    } else if (feature.get('cause_code') == 5) {
+                        $(".infoExtras").append(" <br><span>Causa : <span> Volcán, Sismo y Avalancha </span></span>");    
+                    } else if (feature.get('cause_code') == 4) {
+                        $(".infoExtras").append(" <br><span>Causa : <span> Volcán y Sismo </span></span>");    
+                    } else if (feature.get('cause_code') == 3) {
+                        $(".infoExtras").append(" <br><span>Causa : <span> Sismo y Avalancha </span></span>");    
+                    } else if (feature.get('cause_code') == 1) {
+                        $(".infoExtras").append(" <br><span>Causa : <span> Sismo </span></span>");    
+                    } else {
+                        $(".infoExtras").append(" <br><span>Causa : <span>" + feature.get('cause_code') + " Otros </span></span>");    
+                    }
+                }
+                
+            }
+
+            function infoTsunamiOff() {
+                $("#infoNombre").text(": -");
+                $("#infoFecha").text(": -");
+                $("#infoVIntensidad").text(": -");
+                $(".infoExtras").empty();
+            }
+
+            /**********************************************/
+
+            $("#ex3").slider({});
+            $("#ex3").on("slide", function (slideEvt) {
+                day2 = slideEvt.value[1];
+                day1 = slideEvt.value[0];
+
+                tday1 = parseInt(day1*3600*24 + 1422766800);
+                tday2 = parseInt(day2*3600*24 + 1422766800);
+
+                var date1 = new Date(tday1*1000);
+                txtday1 = date1.getFullYear() + "/" + (date1.getMonth() +1)  + "/" +  date1.getDate();
+
+                var date2 = new Date(tday2*1000);
+                txtday2 = date2.getFullYear() + "/" + (date2.getMonth() +1) + "/" +  date2.getDate();
+
+                $("#ex3SliderVal").text(txtday1 + " : " + txtday2);
+                vboyas.getSource().changed();
+                vestacion_metereologica.getSource().changed();
+            });
+
+            $("#ex2").slider({});
+            $("#ex2").on("slide", function (slideEvt) {
+                year2 = slideEvt.value[1];
+                year1 = slideEvt.value[0];
+                $("#ex2SliderVal").text(slideEvt.value);
+                vvolcanes.getSource().changed();
+                vptsunamis.getSource().changed();
+            });
+
+            $("#ex1").slider();
+            $("#ex1").on("slide", function (slideEvt) {
+                limit = slideEvt.value;
+                maxVEI = slideEvt.value[1];
+                minVEI = slideEvt.value[0];
+                $("#ex6SliderVal").text(slideEvt.value);
+                vvolcanes.getSource().changed();
+            });
+
+            $("#ex7").slider();
+            $("#ex7").on("slide", function (slideEvt) {
+                limit = slideEvt.value;
+                maxITsunami = slideEvt.value[1];
+                minITsunami = slideEvt.value[0];
+                $("#ex7SliderVal").text(slideEvt.value);
+                vptsunamis.getSource().changed();
+            });
+
+            /****************************************************************************/
+
+            $('#layer-city').on('switchChange.bootstrapSwitch', function (event, state) {
+                CityLayer.setVisible(!CityLayer.getVisible());
+                SatLayer.setVisible(!SatLayer.getVisible());
+            });
+
+            $('#layer-placastectonicas').on('switchChange.bootstrapSwitch', function (event, state) {
+                vplacastectonicas.setVisible(!vplacastectonicas.getVisible());
+            });
+
+            $('#layer-nino').on('switchChange.bootstrapSwitch', function (event, state) {
+                layerLines.setVisible(!layerLines.getVisible());
+                vescenario = !vescenario;
+                vdepartamentos.getSource().changed();
+            });
+
+            $('#layer-escenario1').on('switchChange.bootstrapSwitch', function (event, state) {
+
+                layerLines_escenario_1.setVisible(!layerLines_escenario_1.getVisible());
+                layerLines_S1S2_1.setVisible(!layerLines_S1S2_1.getVisible());
+                layerLines_S2S3_1.setVisible(!layerLines_S2S3_1.getVisible());
+                layerLines_S3S4_1.setVisible(!layerLines_S3S4_1.getVisible());
+                vescenario_1 = !vescenario_1;
+                vdepartamentos.getSource().changed();
+                //$('#layer-escenario2').bootstrapSwitch('state', false);
+            });
+
+            $('#layer-escenario2').on('switchChange.bootstrapSwitch', function (event, state) {
+
+                layerLines_escenario_2.setVisible(!layerLines_escenario_2.getVisible());
+                layerLines_S1S2_2.setVisible(!layerLines_S1S2_2.getVisible());
+                layerLines_S2S3_2.setVisible(!layerLines_S2S3_2.getVisible());
+                layerLines_S3S4_2.setVisible(!layerLines_S3S4_2.getVisible());
+                layerLines_S4S5_2.setVisible(!layerLines_S4S5_2.getVisible());
+                vescenario_2 = !vescenario_2;
+                vdepartamentos.getSource().changed();
+                //$('#layer-escenario1').bootstrapSwitch('state', false);
+            });
+
+            $('#layer-erupcionesvolcanicas').on('switchChange.bootstrapSwitch', function (event, state) {
+                if(vvolcanes.getVisible()) {
+                    $("#ex1").slider("disable");
+                }else{
+                    $("#ex1").slider("enable");
+                }
+                vvolcanes.setVisible(!vvolcanes.getVisible());
+            });
+
+            $('#layer-tsunamis').on('switchChange.bootstrapSwitch', function (event, state) {
+                if(vptsunamis.getVisible()) {
+                    $("#ex7").slider("disable");
+                }else{
+                    $("#ex7").slider("enable");
+                }            
+                vptsunamis.setVisible(!vptsunamis.getVisible());
+            });
+
+
+</script>
+</body>
+</html>

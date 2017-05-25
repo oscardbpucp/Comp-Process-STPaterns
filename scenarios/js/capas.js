@@ -39,7 +39,7 @@ var osmLayer = new ol.layer.Tile({
 var SatLayer = new ol.layer.Tile({
     preload: Infinity,
     source: new ol.source.BingMaps({
-        key: 'AsrsZXSBaB6PZKQ3UjgBI_q8gKZyukQgWGIdIJOMHu36KlPBaDfkckF_jCJ-rE69',
+        key: 'AmvcPZCcoCsCI8jvqa06xJ1XZPcL7lTPNLE_5ENA9iRJsKJpD1o2S_4bL3WY5QaH',
         imagerySet: 'Aerial',
         culture: 'es-es'
     }),
@@ -50,7 +50,7 @@ var SatLayer = new ol.layer.Tile({
 var CityLayer = new ol.layer.Tile({
     preload: Infinity,
     source: new ol.source.BingMaps({
-        key: 'AsrsZXSBaB6PZKQ3UjgBI_q8gKZyukQgWGIdIJOMHu36KlPBaDfkckF_jCJ-rE69',
+        key: 'AmvcPZCcoCsCI8jvqa06xJ1XZPcL7lTPNLE_5ENA9iRJsKJpD1o2S_4bL3WY5QaH',
         imagerySet: 'Road',
         culture: 'es-es'
     }),

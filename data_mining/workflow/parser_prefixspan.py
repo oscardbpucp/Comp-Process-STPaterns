@@ -24,8 +24,13 @@ for row in in_data:
     estac_temp = str(row[2]).replace(" ", "").replace("≥",">=").replace("-", ":")
     estac_pto_rocio = str(row[3]).replace(" ", "").replace("≥",">=").replace("-", ":")
     est_presion = str(row[4]).replace(" ", "").replace("≥",">=").replace("-", ":")
-    caudal = str(row[5]).replace(" ", "").replace("≥",">=").replace("-", ":")
-    tmp = "boya-temp_%s boya-salinidad_%s estac-temp_%s estac-pto-rocio_%s est_presion_%s caudal_%s"%(boya_temp, boya_salinidad ,estac_temp ,estac_pto_rocio ,est_presion ,caudal)
+    est_presion_est_m = str(row[5]).replace(" ", "").replace("≥",">=").replace("-", ":")
+    est_veloc_viento_m = str(row[6]).replace(" ", "").replace("≥",">=").replace("-", ":")
+    est_temp_max = str(row[7]).replace(" ", "").replace("≥",">=").replace("-", ":")
+    est_temp_min = str(row[8]).replace(" ", "").replace("≥",">=").replace("-", ":")    
+    caudal = str(row[9]).replace(" ", "").replace("≥",">=").replace("-", ":")
+   
+    tmp = "boya-temp_%s boya-salinidad_%s estac-temp_%s estac-pto-rocio_%s est_presion_%s est_presion_est_m_%s est_veloc_viento_m_%s est_temp_max_%s  est_temp_min_%s caudal_%s"%(boya_temp, boya_salinidad ,estac_temp ,estac_pto_rocio ,est_presion ,est_presion_est_m, est_veloc_viento_m, est_temp_max, est_temp_min, caudal)
    
     if i <= 13:
         cad = cad + " -1 " + tmp
